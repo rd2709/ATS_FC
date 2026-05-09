@@ -1,0 +1,156 @@
+{
+  "user": {
+    "id": "u_001",
+    "name": "Rishabh",
+    "role": "Super Admin",
+    "company": "First Connect Hiring Solutions"
+  },
+  "dashboard": {
+    "metrics": {
+      "totalClients": 2,
+      "activeJobs": 2,
+      "totalCandidates": 3,
+      "placements": 1,
+      "revenue": 300000
+    }
+  },
+  "clients": [
+    {
+      "id": "c_001",
+      "companyName": "Infosys",
+      "industry": "IT Services",
+      "contactPerson": "HR Manager",
+      "email": "hr@infosys.com",
+      "phone": "+91XXXXXXXXXX",
+      "status": "Active"
+    },
+    {
+      "id": "c_002",
+      "companyName": "TCS",
+      "industry": "Consulting",
+      "contactPerson": "Talent Lead",
+      "email": "talent@tcs.com",
+      "phone": "+91XXXXXXXXXX",
+      "status": "Active"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "j_001",
+      "title": "Senior Backend Developer",
+      "clientId": "c_001",
+      "location": "Bangalore",
+      "experience": "5-8 Years",
+      "salaryRange": "18-25 LPA",
+      "status": "Open"
+    },
+    {
+      "id": "j_002",
+      "title": "Product Manager",
+      "clientId": "c_002",
+      "location": "Delhi",
+      "experience": "6-10 Years",
+      "salaryRange": "25-35 LPA",
+      "status": "Open"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand_001",
+      "name": "Amit Sharma",
+      "email": "amit@gmail.com",
+      "phone": "+91XXXXXXXXXX",
+      "experience": "6 Years",
+      "skills": ["Node.js", "MongoDB", "AWS"],
+      "currentCTC": "14 LPA",
+      "expectedCTC": "20 LPA",
+      "noticePeriod": "30 Days",
+      "status": "Interview",
+      "jobId": "j_001",
+      "resumeUrl": "/resumes/amit.pdf"
+    },
+    {
+      "id": "cand_002",
+      "name": "Priya Verma",
+      "email": "priya@gmail.com",
+      "phone": "+91XXXXXXXXXX",
+      "experience": "7 Years",
+      "skills": ["Product Strategy", "Agile", "Analytics"],
+      "currentCTC": "22 LPA",
+      "expectedCTC": "30 LPA",
+      "noticePeriod": "60 Days",
+      "status": "Screening",
+      "jobId": "j_002",
+      "resumeUrl": "/resumes/priya.pdf"
+    },
+    {
+      "id": "cand_003",
+      "name": "Rahul Mehta",
+      "email": "rahul@gmail.com",
+      "phone": "+91XXXXXXXXXX",
+      "experience": "5 Years",
+      "skills": ["React", "Frontend", "UI/UX"],
+      "currentCTC": "12 LPA",
+      "expectedCTC": "18 LPA",
+      "noticePeriod": "Immediate",
+      "status": "Applied",
+      "jobId": "j_001",
+      "resumeUrl": "/resumes/rahul.pdf"
+    }
+  ],
+  "pipelineStages": [
+    {
+      "stage": "Applied",
+      "candidates": ["cand_003"]
+    },
+    {
+      "stage": "Screening",
+      "candidates": ["cand_002"]
+    },
+    {
+      "stage": "Interview",
+      "candidates": ["cand_001"]
+    },
+    {
+      "stage": "Offered",
+      "candidates": []
+    },
+    {
+      "stage": "Hired",
+      "candidates": []
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv_001",
+      "clientId": "c_001",
+      "jobId": "j_001",
+      "candidateId": "cand_001",
+      "amount": 300000,
+      "status": "Pending",
+      "createdAt": "2026-05-10",
+      "timeline": ["Generated", "Sent"]
+    }
+  ],
+  "activities": [
+    {
+      "id": "act_001",
+      "type": "Candidate Moved",
+      "candidateId": "cand_001",
+      "fromStage": "Screening",
+      "toStage": "Interview",
+      "timestamp": "2026-05-10T10:30:00Z"
+    }
+  ],
+  "settings": {
+    "pipelineStagesOrder": [
+      "Applied",
+      "Screening",
+      "Interview",
+      "Offered",
+      "Hired"
+    ],
+    "currency": "INR",
+    "dateFormat": "DD-MM-YYYY"
+  }
+}
