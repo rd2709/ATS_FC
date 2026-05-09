@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/FirstConnect_CRM_ATS_v3__1_.html" }
-  ]
-}
